@@ -2,7 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const db = require('./config/db')
-const PORT = 8000;
+require('dotenv').config()
+const PORT = process.env.PORT || 3000;
 
 // Set the view engine to EJS
 
